@@ -45,7 +45,7 @@ class NAMESPACE_Lzb_Plugin_CONTROL_NAME {
      * Init.
      */
     public static function init() {
-        add_action( 'plugins_loaded', array( 'NAMESPACE_Lzb_Plugin_CONTROL_NAME', 'plugins_loaded' ), 11 );
+        add_action( 'init', array( 'NAMESPACE_Lzb_Plugin_CONTROL_NAME', 'plugins_loaded' ), 11 );
     }
 
     /**
