@@ -1,0 +1,24 @@
+{
+  "name": "lzb-CONTROL-NAME",
+  "title": "Lazy Blocks: CONTROL_LABEL Control",
+  "version": "1.0.0",
+  "description": "SHORT_DESCRIPTION",
+  "license": "GPL-2.0",
+  "author": "AUTHOR_NAME <AUTHOR_URL>",
+  "scripts": {
+    "build": "wpeg --build",
+    "dev": "wpeg --build --watch"
+  },
+  "devDependencies": {
+    "@babel/node": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/plugin-transform-react-jsx": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/register": "^7.8.3",
+    "wpeg": "0.0.23"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6"
+  }
+}
