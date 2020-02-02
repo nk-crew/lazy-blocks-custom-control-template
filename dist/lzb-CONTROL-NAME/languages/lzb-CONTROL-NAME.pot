@@ -18,7 +18,3 @@ msgstr ""
 #: dist/lzb-CONTROL-NAME/controls/CONTROL-NAME.php:34
 msgid "CONTROL_LABEL"
 msgstr ""
-
-#: dist/lzb-CONTROL-NAME/controls/CONTROL-NAME.php:37
-msgid "Basic"
-msgstr ""
