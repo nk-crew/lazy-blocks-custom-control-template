@@ -29,7 +29,7 @@ addFilter( 'lzb.editor.control.CONTROL_NAME.render', 'lzb.editor', ( render, pro
                 onChange={ props.onChange }
             />
             <p>
-                Custom Control Attribute: { props.data.CONTROL_NAME_custom_attribute }
+                { __( 'Custom Control Attribute:', 'TEXTDOMAIN' ) } { props.data.CONTROL_NAME_custom_attribute }
             </p>
         </div>
     );
