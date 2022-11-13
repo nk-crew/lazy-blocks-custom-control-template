@@ -4,7 +4,7 @@ Welcome to the official Lazy Blocks - Custom Control Template repository on GitH
 
 Production-ready build placed in `dist` directory. Sources placed in `src` directory.
 
-Looking for documentation? Please read the [Create custom control article](https://lazyblocks.com/documentation/examples/create-custom-control/).
+Looking for documentation? Please read the [Create custom control article](https://www.lazyblocks.com/docs/examples/create-custom-control/).
 
 ## Development
 

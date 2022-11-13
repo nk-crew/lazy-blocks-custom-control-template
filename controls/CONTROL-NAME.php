@@ -34,7 +34,7 @@ if ( ! class_exists( 'NAMESPACE_Lzb_Control_CONTROL_NAME' ) ) :
             $this->label = __( 'CONTROL_LABEL', 'TEXTDOMAIN' );
 
             // Category name [basic, content, choice, advanced, layout]
-            // How to add custom category - https://lazyblocks.com/documentation/php-filters/lzb-controls-categories/
+            // How to add custom category - https://www.lazyblocks.com/docs/php-filters/lzb-controls-categories/
             $this->category = 'basic';
 
             // Add/remove some options from control settings.
