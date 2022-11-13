@@ -6,8 +6,9 @@
   "license": "GPL-2.0",
   "author": "AUTHOR_NAME <AUTHOR_URL>",
   "scripts": {
-    "build": "wpeg --build",
     "dev": "wpeg --build --watch",
+    "build": "wpeg --build",
+    "build:prod": "wpeg --build && npm run zip",
     "zip": "gulp zip"
   },
   "devDependencies": {
