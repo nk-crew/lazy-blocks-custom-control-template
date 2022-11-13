@@ -1,15 +1,12 @@
 const cfg = {};
 
 // Build Paths.
-cfg.src = './src';
-cfg.dist_root = './dist';
-cfg.dist = '{dist_root}/lzb-CONTROL-NAME';
-
-// Copy files.
-cfg.copy_files_src = [ '{src}/**/*', '!{src}/**/*.{js,scss}', '{src}/**/vendor/**/*.{js,scss}' ];
+cfg.src = '.';
+cfg.dist = './dist';
 
 // Compile SCSS files.
-cfg.compile_scss_files_src = [ '{src}/**/*.scss', '!{src}/**/vendor/**/*' ];
+cfg.compile_scss_files_src = ['{src}/*assets/**/*.scss'];
+cfg.compile_scss_files_rtl = true;
 
 // Compile JS files.
 cfg.compile_js_files_src = [ '{src}/*assets/js/CONTROL-NAME.js' ];
@@ -18,8 +15,8 @@ cfg.compile_js_files_src = [ '{src}/*assets/js/CONTROL-NAME.js' ];
 cfg.correct_line_endings_files_src = '{dist}/**/*.{js,css}';
 
 // Translate PHP files.
-cfg.translate_php_files_src = '{dist}/**/*.php';
-cfg.translate_php_files_dist = `{dist}/languages/lzb-CONTROL-NAME.pot`;
+cfg.translate_php_files_src = '{src}/**/*.php';
+cfg.translate_php_files_dist = `{src}/languages/lzb-CONTROL-NAME.pot`;
 cfg.translate_php_options = {
     domain: 'TEXTDOMAIN',
     package: 'Lazy Blocks: CONTROL_LABEL Control',
@@ -28,10 +25,8 @@ cfg.translate_php_options = {
 };
 
 // Watch files.
-cfg.watch_files = [ '{src}/**/*', '!{src}/**/*.{js,scss}' ];
+cfg.watch_js_files = ['{src}/assets/**/*.js', '!{src}/*vendor/**/*'];
 
-cfg.watch_js_files = [ '{src}/**/*.js', '{src}/**/*.scss', '!{src}/*vendor/**/*' ];
-
-cfg.watch_scss_files = '{src}/**/*.scss';
+cfg.watch_scss_files = '{src}/assets/**/*.scss';
 
 module.exports = cfg;

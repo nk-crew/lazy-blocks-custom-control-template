@@ -7,18 +7,22 @@
   "author": "AUTHOR_NAME <AUTHOR_URL>",
   "scripts": {
     "build": "wpeg --build",
-    "dev": "wpeg --build --watch"
+    "dev": "wpeg --build --watch",
+    "zip": "gulp zip"
   },
   "devDependencies": {
-    "@babel/node": "^7.10.5",
-    "@babel/core": "^7.11.6",
-    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
-    "@babel/plugin-transform-react-jsx": "^7.10.4",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/register": "^7.11.5",
-    "wpeg": "1.0.15"
+    "@babel/node": "^7.20.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.2",
+    "@babel/plugin-transform-react-jsx": "^7.19.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.18.9",
+    "browserslist-config-nk": "^1.0.0",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^5.1.0",
+    "wpeg": "1.2.6"
   },
   "dependencies": {
-    "classnames": "^2.2.6"
+    "classnames": "^2.3.2"
   }
 }

@@ -58,14 +58,14 @@ if ( ! class_exists( 'NAMESPACE_Lzb_Control_CONTROL_NAME' ) ) :
         public function register_assets() {
             wp_register_script(
                 'NAMESPACE-lzb-control-CONTROL_NAME',
-                NAMESPACE_Lzb_Plugin_CONTROL_NAME::$plugin_url . 'assets/js/CONTROL-NAME.min.js',
+                NAMESPACE_Lzb_Plugin_CONTROL_NAME::$plugin_url . 'dist/assets/js/CONTROL-NAME.min.js',
                 array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-components' ),
                 '1.0.0',
                 true
             );
             wp_register_style(
                 'NAMESPACE-lzb-control-CONTROL_NAME',
-                NAMESPACE_Lzb_Plugin_CONTROL_NAME::$plugin_url . 'assets/css/CONTROL-NAME.min.css',
+                NAMESPACE_Lzb_Plugin_CONTROL_NAME::$plugin_url . 'dist/assets/css/CONTROL-NAME.min.css',
                 array(),
                 '1.0.0'
             );
