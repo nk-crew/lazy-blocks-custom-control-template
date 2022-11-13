@@ -15,4 +15,5 @@ Looking for documentation? Please read the [Create custom control article](https
 ### Building
 
 - `npm run build` to run build
+- `npm run build:prod` to run build and prepare zip files for production
 - `npm run dev` to run build and start files watcher
