@@ -65,6 +65,27 @@ class NAMESPACE_Lzb_Plugin_CONTROL_NAME {
         // Include control.
         include_once self::$plugin_path . '/controls/CONTROL-NAME.php';
     }
+
+	/**
+	 * Get .asset.php file data.
+	 *
+	 * @param string $filepath asset file path.
+	 *
+	 * @return array
+	 */
+	public static function get_asset_file( $filepath ) {
+		$asset_path = self::$plugin_path . $filepath . '.asset.php';
+
+		if ( file_exists( $asset_path ) ) {
+			// phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			return include $asset_path;
+		}
+
+		return array(
+			'dependencies' => array(),
+			'version'      => '1.0.0',
+		);
+	}
 }
 
 NAMESPACE_Lzb_Plugin_CONTROL_NAME::init();

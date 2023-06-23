@@ -1,29 +1,28 @@
 {
-  "name": "lzb-CONTROL-NAME",
-  "title": "Lazy Blocks: CONTROL_LABEL Control",
-  "version": "1.0.0",
-  "description": "SHORT_DESCRIPTION",
-  "license": "GPL-2.0",
-  "author": "AUTHOR_NAME <AUTHOR_URL>",
-  "scripts": {
-    "dev": "wpeg --build --watch",
-    "build": "wpeg --build",
-    "build:prod": "wpeg --build && npm run zip",
-    "zip": "gulp zip"
-  },
-  "devDependencies": {
-    "@babel/node": "^7.20.2",
-    "@babel/plugin-proposal-object-rest-spread": "^7.20.2",
-    "@babel/plugin-transform-react-jsx": "^7.19.0",
-    "@babel/preset-env": "^7.20.2",
-    "@babel/register": "^7.18.9",
-    "browserslist-config-nk": "^1.0.0",
-    "del": "^6.1.1",
-    "gulp": "^4.0.2",
-    "gulp-zip": "^5.1.0",
-    "wpeg": "1.2.6"
-  },
-  "dependencies": {
-    "classnames": "^2.3.2"
-  }
+	"name": "lzb-CONTROL-NAME",
+	"title": "Lazy Blocks: CONTROL_LABEL Control",
+	"version": "1.0.0",
+	"description": "SHORT_DESCRIPTION",
+	"license": "GPL-2.0",
+	"author": "AUTHOR_NAME <AUTHOR_URL>",
+	"scripts": {
+		"dev": "wp-scripts start --hot --progress",
+		"build": "wp-scripts build --progress",
+		"build:prod": "npm run build && npm run zip",
+		"zip": "gulp zip"
+	},
+	"devDependencies": {
+		"@wordpress/eslint-plugin": "^14.8.0",
+		"@wordpress/prettier-config": "^2.19.0",
+		"@wordpress/scripts": "^26.6.0",
+		"@wordpress/stylelint-config": "^21.19.0",
+		"del": "^6.1.1",
+		"gulp": "^4.0.2",
+		"gulp-zip": "^5.1.0",
+		"prettier": "^2.8.8",
+		"rtlcss-webpack-plugin": "^4.0.7"
+	},
+	"dependencies": {
+		"classnames": "^2.3.2"
+	}
 }
