@@ -1,0 +1,14 @@
+# Directories to ignore
+/.git
+/.github
+/.vscode
+/.wordpress-org
+/node_modules
+/src
+
+# Files to ignore
+/.*
+/package.json
+/package-lock.json
+/README.md
+/webpack.config.js

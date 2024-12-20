@@ -8,20 +8,15 @@ yarn-error.log*
 # Coverage directory used by tools like istanbul
 coverage
 
-# Plugin ZIP production build
-dist-zip
-
 # Webpack dev build
 build/runtime*
-build/*.hot-update.json
-build/*.hot-update.js
-build/*.hot-update.js.map
+build/*/*.hot-update.*
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
 # Composer directories
-vendor
+vendor/
 
 # Custom PHPCS configs
 .phpcs.xml

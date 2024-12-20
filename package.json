@@ -9,20 +9,19 @@
 		"dev": "wp-scripts start --hot --progress",
 		"build": "wp-scripts build --progress",
 		"build:prod": "npm run build && npm run zip",
-		"zip": "gulp zip"
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"zip": "wp-scripts plugin-zip"
 	},
 	"devDependencies": {
-		"@wordpress/eslint-plugin": "^14.8.0",
-		"@wordpress/prettier-config": "^2.19.0",
-		"@wordpress/scripts": "^26.6.0",
-		"@wordpress/stylelint-config": "^21.19.0",
-		"del": "^6.1.1",
-		"gulp": "^4.0.2",
-		"gulp-zip": "^5.1.0",
-		"prettier": "^2.8.8",
+		"@wordpress/eslint-plugin": "^22.0.0",
+		"@wordpress/prettier-config": "^4.14.0",
+		"@wordpress/scripts": "^30.7.0",
+		"@wordpress/stylelint-config": "^23.6.0",
+		"prettier": "^3.4.2",
 		"rtlcss-webpack-plugin": "^4.0.7"
 	},
 	"dependencies": {
-		"classnames": "^2.3.2"
+		"classnames": "^2.5.1"
 	}
 }

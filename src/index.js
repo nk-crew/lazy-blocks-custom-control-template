@@ -46,11 +46,11 @@ function EditorComponent(props) {
 }
 
 /**
- * Constructor Component.
+ * Block Builder Component.
  *
  * @param {Object} props
  */
-function ConstructorComponent(props) {
+function BlockBuilderComponent(props) {
 	const { updateData, data } = props;
 
 	return (
@@ -80,12 +80,12 @@ addFilter(
 );
 
 /**
- * Control settings render in constructor.
+ * Control settings render in block builder.
  */
 addFilter(
 	'lzb.constructor.control.CONTROL_NAME.settings',
 	'lzb.constructor',
 	(render, props) => {
-		return <ConstructorComponent {...props} />;
+		return <BlockBuilderComponent {...props} />;
 	}
 );

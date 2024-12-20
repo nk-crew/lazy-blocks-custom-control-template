@@ -14,23 +14,17 @@
 	"less.validate": false,
 
 	"editor.codeActionsOnSave": {
-		"source.fixAll.stylelint": true
+		"source.fixAll.stylelint": "explicit"
 	},
-	"stylelint.validate": [
-		"css",
-		"scss"
-	],
-	"stylelint.snippet": [
-		"css",
-		"scss"
-	],
+	"stylelint.validate": ["css", "scss"],
+	"stylelint.snippet": ["css", "scss"],
 	"[json]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 
 	"search.exclude": {
-			"**/.git": true,
-			"**/node_modules": true,
-			"**/build": true
-	},
+		"**/.git": true,
+		"**/node_modules": true,
+		"**/build": true
+	}
 }
