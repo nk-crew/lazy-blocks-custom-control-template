@@ -16,14 +16,14 @@ build/*/*.hot-update.*
 build/Release
 
 # Composer directories
-vendor/
+/vendor
 
 # Custom PHPCS configs
 .phpcs.xml
 phpcs.xml
 
 # Dependency directories
-node_modules/
+node_modules
 
 # Optional npm cache directory
 .npm
@@ -42,3 +42,5 @@ node_modules/
 
 # system files
 .DS_Store
+
+.specs/
