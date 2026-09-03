@@ -5,23 +5,37 @@
 	"description": "SHORT_DESCRIPTION",
 	"license": "GPL-2.0",
 	"author": "AUTHOR_NAME <AUTHOR_URL>",
+	"files": [
+		"build",
+		"controls",
+		"languages",
+		"lzb-CONTROL-NAME.php",
+		"readme.txt"
+	],
 	"scripts": {
 		"dev": "wp-scripts start --hot --progress",
 		"build": "wp-scripts build --progress",
 		"build:prod": "npm run build && npm run zip",
-		"lint:css": "wp-scripts lint-style",
-		"lint:js": "wp-scripts lint-js",
-		"zip": "wp-scripts plugin-zip"
+		"zip": "wp-scripts plugin-zip",
+		"lint": "npm run lint:js && npm run lint:css",
+		"lint:js": "biome check",
+		"lint:css": "stylelint --custom-syntax postcss-scss \"src/**/*.scss\"",
+		"format:js": "biome check --write",
+		"format:css": "stylelint --fix --custom-syntax postcss-scss \"src/**/*.scss\"",
+		"make-pot": "wp i18n make-pot ./ ./languages/lzb-CONTROL-NAME.pot --slug=lzb-CONTROL-NAME --exclude=node_modules,build",
+		"make-json": "wp i18n make-json ./languages --no-purge"
 	},
 	"devDependencies": {
-		"@wordpress/eslint-plugin": "22.0.0",
-		"@wordpress/prettier-config": "^4.14.0",
-		"@wordpress/scripts": "^30.7.0",
-		"@wordpress/stylelint-config": "^23.6.0",
-		"prettier": "^3.4.2",
-		"rtlcss-webpack-plugin": "^4.0.7"
+		"@biomejs/biome": "2.5.7",
+		"@nk-crew/plugin-toolkit": "^0.6.0",
+		"@wordpress/scripts": "^34.1.0",
+		"@wordpress/stylelint-config": "^23.29.0",
+		"stylelint": "^16.26.1",
+		"stylelint-scss": "^6.14.0"
 	},
-	"dependencies": {
-		"classnames": "^2.5.1"
+	"overrides": {
+		"stylelint": "$stylelint",
+		"stylelint-scss": "$stylelint-scss",
+		"@wordpress/stylelint-config": "$@wordpress/stylelint-config"
 	}
 }

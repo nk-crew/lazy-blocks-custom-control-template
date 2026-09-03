@@ -1,0 +1,3 @@
+{
+	"extends": ["@nk-crew/plugin-toolkit/biome"]
+}
