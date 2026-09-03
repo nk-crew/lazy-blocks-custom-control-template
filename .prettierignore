@@ -1,9 +1,0 @@
-**/*.yml
-**/*.css
-**/*.scss
-**/*.php
-node_modules
-dist
-build
-vendor
-vendors

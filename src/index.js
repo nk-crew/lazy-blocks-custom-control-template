@@ -1,15 +1,17 @@
 /**
  * Styles.
  */
+
 import './index.scss';
 
 /**
- * WordPress dependencies
+ * WordPress dependencies.
  */
-import { __ } from '@wordpress/i18n';
-import { addFilter } from '@wordpress/hooks';
-import { useSelect } from '@wordpress/data';
+
 import { PanelBody, TextControl } from '@wordpress/components';
+import { useSelect } from '@wordpress/data';
+import { addFilter } from '@wordpress/hooks';
+import { __ } from '@wordpress/i18n';
 
 /**
  * Editor Component.
@@ -27,13 +29,12 @@ function EditorComponent(props) {
 			BaseControl: components.BaseControl,
 			useBlockControlProps: hooks.useBlockControlProps,
 		};
-	});
+	}, []);
 
 	return (
 		<BaseControl {...useBlockControlProps(props, { label: false })}>
 			<TextControl
 				label={data.label}
-				placeholder={data.placeholder}
 				value={getValue()}
 				onChange={onChange}
 			/>

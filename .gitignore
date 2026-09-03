@@ -9,8 +9,9 @@ yarn-error.log*
 coverage
 
 # Webpack dev build
-build/runtime*
-build/*/*.hot-update.*
+build/runtime.*
+build/**/*.map
+build/**/*.hot-update.*
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
@@ -27,9 +28,6 @@ node_modules
 
 # Optional npm cache directory
 .npm
-
-# Optional eslint cache
-.eslintcache
 
 # Output of `npm pack`
 *.tgz
