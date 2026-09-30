@@ -28,7 +28,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "2.5.7",
 		"@nk-crew/plugin-toolkit": "^0.6.0",
-		"@wordpress/scripts": "^34.1.0",
+		"@wordpress/scripts": "^36.0.0",
 		"@wordpress/stylelint-config": "^23.29.0",
 		"stylelint": "^16.26.1",
 		"stylelint-scss": "^6.14.0"
