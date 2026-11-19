@@ -36,6 +36,9 @@
 	"overrides": {
 		"stylelint": "$stylelint",
 		"stylelint-scss": "$stylelint-scss",
-		"@wordpress/stylelint-config": "$@wordpress/stylelint-config"
+		"@wordpress/stylelint-config": "$@wordpress/stylelint-config",
+		"copy-webpack-plugin": {
+			"serialize-javascript": "^7.1.4"
+		}
 	}
 }
